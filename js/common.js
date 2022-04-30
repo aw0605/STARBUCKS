@@ -30,20 +30,12 @@ window.addEventListener('scroll',
                 opacity : 0,
                 display : 'none'
             });
-            //상단으로 스크롤 버튼 보이기
-            gsap.to(toTopEl, 0.2, {
-                x: 0,
-            });
         }else{
             //badgeEl.style.display = 'block';
             gsap.to(badgeEl,0.6,{
                 opacity : 1,
                 display : 'block'
             });
-            //상단으로 스크롤 버튼 숨기기
-            gsap.to(toTopEl, 0.2, {
-                x: 100,
-            })
         }
     },300)
 );
